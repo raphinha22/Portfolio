@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --main-font: "Ubuntu", sans-serif;
+  --boxshadow: 0 5px 10px black;
+  --textcolor: #a1a1a1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #323232;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  padding: 0 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  font-family: var(--main-font);
+}
+.navbar h1 {
+  font-family: var(--main-font);
+  font-size: 30px;
+  color: #fff;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+.box-image {
+  padding: 20px;
+  box-shadow: var(--boxshadow);
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+.box-image img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.box-image:hover {
+  border-radius: 20px;
+}
+.box-image:hover img {
+  border-radius: 20px;
+}
+.info-raphinha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px 0;
+}
+.info-raphinha h5 {
+  font-size: 20px;
+  font-family: var(--main-font);
+  color: #a1a1a1;
+}
+.info-raphinha h1 {
+  font-family: var(--main-font);
+  font-size: 30px;
+  color: var(--textcolor);
+}
+.info-raphinha h3 {
+  font-family: var(--main-font);
+  color: var(--textcolor);
+  font-size: 25px;
+}
+.info-raphinha .btn-down__contact {
+  display: flex;
+  gap: 20px;
+}
+.info-raphinha .btn-down__contact button:first-child {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: var(--boxshadow);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.info-raphinha .btn-down__contact button a {
+  font-family: var(--main-font);
+  text-decoration: none;
+  color: var(--textcolor);
+  font-weight: bold;
+  transition: 0.3s ease-in;
+}
+.info-raphinha .btn-down__contact button:last-child {
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  background: #282828;
+  box-shadow: var(--boxshadow);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.info-raphinha .btn-down__contact button:first-child:hover {
+  background: #494949;
+}
+.info-raphinha .btn-down__contact button:first-child:hover a {
+  color: #fff;
+}
+.info-raphinha .btn-down__contact button:last-child:hover {
+  background: #c5c5c5;
+}
+.info-raphinha .btn-down__contact button:last-child:hover {
+  color: #494949;
+}
+.socail {
+  display: flex;
+  gap: 0 20px;
+}
+.socail a:first-child {
+  color: #fff;
+  transition: 0.3s;
+}
+.socail a:nth-child(2) {
+  color: #d52929;
+  transition: 0.3s;
+}
+.socail a:last-child {
+  color: #0544b8;
+  transition: 0.3s;
+}
+.socail a:hover {
+  transform: scale(1.1);
+}
+.menu {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about {
+  padding-top: 20px;
+}
+.about-img img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+  object-position: top;
+}
+.about-page {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.right-about {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  align-items: center;
+}
+.h1-header {
+  color: #fff;
+}
+.all-right {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about .h1-header {
+  text-align: center;
+  font-family: var(--main-font);
+  margin-top: 20px;
+}
+.about .h3-header {
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--textcolor);
+}
+.experience {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 2px rgb(193, 188, 46) solid;
+  width: 300px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--main-font);
+}
+.education {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 2px rgb(193, 188, 46) solid;
+  width: 300px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--main-font);
+}
+.text-about {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: var(--main-font);
+  color: #fff;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 1250px) {
+  .about-page {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar ul {
+    display: none;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .menu {
+    display: block;
+  }
+  .right-about {
+    flex-direction: column;
+  }
+  .all-right {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .box-image img {
+    width: 300px;
+    height: 300px;
+  }
+  .about-img img {
+    width: 300px;
+    height: 300px;
+  }
+}
+.respon {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #168e90;
+  width: 350px;
+  padding: 100px 0;
+  border-radius: 20px;
+  z-index: 9999;
+}
+.respon li {
+  list-style: none;
+  padding: 20px 0;
+}
+.respon li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: var(--main-font);
+  color: #fff;
+}
+.Experience {
+  padding-top: 20px;
+}
+.expert-head p,
+h1 {
+  text-align: center;
+  font-family: var(--main-font);
+}
+.expert-head p {
+  font-weight: bold;
+  font-size: 20px;
+  color: #c5c5c5;
+}
+.expert-head h1 {
+  margin-top: 20px;
+  color: var(--textcolor);
+}
+.front-end {
+  padding: 30px;
+  width: 700px;
+  font-family: var(--main-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px yellow solid;
+}
+.front-end h3 {
+  text-align: center;
+  font-size: 25px;
+  color: var(--textcolor);
+}
+.expertt-skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 200px;
+  justify-items: start;
+  margin-top: 20px;
+}
+.expert-skill {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 50px;
+}
+.langauge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-text p {
+  color: var(--textcolor);
+}
+.icon-text h2 {
+  color: #c5c5c5;
+}
+.icon {
+  color: #0544b8;
+}
