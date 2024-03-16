@@ -334,6 +334,9 @@ h1 {
   body {
     background: linear-gradient(to top, #eee 60%, #521bdd 50%);
   }
+  .Experience {
+    padding-bottom: 20px;
+  }
   .navbar ul {
     display: none;
   }
@@ -366,6 +369,9 @@ h1 {
   }
   .expert-head h1 {
     color: #fff;
+  }
+  .icon-text h2 {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 600px) {
