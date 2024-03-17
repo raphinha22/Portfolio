@@ -332,9 +332,10 @@ h1 {
 }
 @media screen and (max-width: 1000px) {
   body {
-    background: linear-gradient(to top, #eee 60%, #521bdd 50%);
+    background: linear-gradient(to top, #eee 75%, #521bdd 40%);
   }
-  .Experience {
+  .Experience,
+  .about {
     padding-bottom: 20px;
   }
   .navbar ul {
@@ -376,8 +377,8 @@ h1 {
 }
 @media screen and (max-width: 600px) {
   .box-image img {
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
   }
   .about-img img {
     width: 300px;
