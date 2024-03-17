@@ -1,7 +1,54 @@
+import football from "../Images/ronaldo.jpg";
+import menu from "../Images/menu.jpg";
+import rockets from "../Images/rockets.jpg";
+
 const Project = () => {
   return (
-    <div>Project</div>
-  )
-}
+    <div className="Project">
+      <div className="Project-head">
+        <p>Browse My Recent</p>
+        <h1>Projects</h1>
+      </div>
+      <div className="flex-project">
+        <div className="myproject">
+          <img src={football} alt="ronaldo" />
+          <h2>Football Project</h2>
+          <div className="view-btn">
+            <a href="https://github.com/raphinha22/football">
+              <button className="code">GitHub</button>
+            </a>
+            <a href="https://football-nu-five.vercel.app">
+              <button className="demo">Live Demo</button>
+            </a>
+          </div>
+        </div>
+        <div className="myproject">
+          <img src={rockets} alt="ronaldo" />
+          <h2>Rockets Project</h2>
+          <div className="view-btn">
+            <a href="https://github.com/raphinha22/football">
+              <button className="code">GitHub</button>
+            </a>
+            <a href="https://football-nu-five.vercel.app">
+              <button className="demo">Live Demo</button>
+            </a>
+          </div>
+        </div>
+        <div className="myproject">
+          <img src={menu} alt="ronaldo" />
+          <h2>Menu Project</h2>
+          <div className="view-btn">
+            <a href="https://github.com/raphinha22/football">
+              <button className="code">GitHub</button>
+            </a>
+            <a href="https://football-nu-five.vercel.app">
+              <button className="demo">Live Demo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Project
+export default Project;

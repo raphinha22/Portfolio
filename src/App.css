@@ -319,10 +319,81 @@ h1 {
 .icon {
   color: rgb(28, 194, 250);
 }
+
+.Project p {
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--textcolor);
+  margin-top: 20px;
+  font-weight: bold;
+}
+.Project h1 {
+  margin-top: 20px;
+  color: var(--textcolor);
+}
+.myproject img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  border: var(--color-page) 5px solid;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.myproject img:hover {
+  filter: blur(2px);
+}
+.flex-project {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 50px;
+}
+.myproject {
+  padding: 40px;
+  border: 10px solid var(--color-page);
+  box-shadow: var(--boxshadow);
+  border-radius: 20px;
+  font-family: var(--main-font);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myproject h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--textcolor);
+}
+.view-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+.view-btn .code,
+.demo {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: var(--color-page) 3px solid;
+  font-weight: bold;
+  background: #fff;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1450px) {
   .expert-skill {
     flex-direction: column;
     align-items: center;
+  }
+  .myproject img {
+    width: 200px;
+    height: 200px;
+  }
+  .view-btn .code,
+  .demo {
+    padding: 10px 15px;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -373,6 +444,19 @@ h1 {
   }
   .icon-text h2 {
     font-size: 15px;
+  }
+  .flex-project {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Project {
+    padding-bottom: 30px;
+  }
+  .Project-head p {
+    color: #fff;
+  }
+  .Project-head h1 {
+    color: #fff;
   }
 }
 @media screen and (max-width: 600px) {
