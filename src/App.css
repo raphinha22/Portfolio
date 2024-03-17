@@ -167,6 +167,8 @@ body {
   border-radius: 20px;
   cursor: pointer;
   object-position: top;
+  border: 10px var(--color-page) solid;
+  box-shadow: var(--boxshadow);
 }
 .about-page {
   display: flex;
@@ -381,6 +383,81 @@ h1 {
   background: #fff;
   cursor: pointer;
 }
+.sendto {
+  width: 30%;
+}
+.sendto p {
+  font-family: var(--main-font);
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 25px;
+}
+.contact-page {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+.contact h2 {
+  text-align: center;
+  font-family: var(--main-font);
+  margin-top: 20px;
+  font-size: 30px;
+  color: var(--textcolor);
+}
+.contact h4 {
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 20px;
+  color: var(--textcolor);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+form input {
+  width: 500px;
+  height: 50px;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px var(--color-page) solid;
+  box-shadow: var(--boxshadow);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 15px;
+}
+input:last-child {
+  width: 200px;
+  border-radius: 10px;
+  border: 5px var(--color-page) solid;
+  box-shadow: var(--boxshadow);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.email {
+  margin-top: 20px;
+}
+.sms {
+  margin-top: 20px;
+}
+textarea {
+  width: 500px;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px var(--color-page) solid;
+  box-shadow: var(--boxshadow);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 15px;
+}
+label {
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--main-font);
+}
 
 @media screen and (max-width: 1450px) {
   .expert-skill {
@@ -458,6 +535,21 @@ h1 {
   .Project-head h1 {
     color: #fff;
   }
+  .contact h4 {
+    color: #fff;
+  }
+  .contact h2 {
+    color: #fff;
+  }
+  .contact-page {
+    flex-direction: column;
+  }
+  .sms {
+    color: #000;
+  }
+  .sendto {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 600px) {
   .box-image img {
@@ -467,5 +559,20 @@ h1 {
   .about-img img {
     width: 300px;
     height: 300px;
+  }
+  form input {
+    width: 300px;
+  }
+  textarea {
+    width: 300px;
+  }
+  input:last-child {
+    width: 150px;
+  }
+  .contact h4 {
+    margin-top: -10px;
+  }
+  .contact {
+    padding-bottom: 30px;
   }
 }
