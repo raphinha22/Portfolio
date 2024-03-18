@@ -244,7 +244,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #168e90;
+  background: var(--color-page);
   width: 350px;
   padding: 100px 0;
   border-radius: 20px;
@@ -304,7 +304,7 @@ h1 {
 .expert-skill {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
   padding-top: 50px;
 }
 .langauge {
@@ -428,7 +428,7 @@ form input {
   font-weight: 500;
   font-size: 15px;
 }
-input:last-child {
+.submit {
   width: 200px;
   border-radius: 10px;
   border: 5px var(--color-page) solid;
@@ -458,7 +458,19 @@ label {
   font-size: 20px;
   font-family: var(--main-font);
 }
-
+.verify img {
+  width: 30px;
+}
+.verify {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.verify h5 {
+  font-size: 15px;
+  color: #fff;
+  font-family: var(--main-font);
+}
 @media screen and (max-width: 1450px) {
   .expert-skill {
     flex-direction: column;

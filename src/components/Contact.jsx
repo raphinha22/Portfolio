@@ -1,5 +1,20 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const notify = () => {
+  toast.success("messages sent successfully", {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });
+};
 
 const Contact = () => {
   const form = useRef();
@@ -31,12 +46,25 @@ const Contact = () => {
       <div className="contact-page">
         <form ref={form} onSubmit={sendEmail}>
           <label className="name">Name</label>
-          <input type="text" name="to_name" placeholder="User Name" required/>
+          <input type="text" name="to_name" placeholder="User Name" required />
           <label className="email">Email</label>
-          <input type="email" name="from_name" placeholder="Your Email" required/>
+          <input
+            type="email"
+            name="from_name"
+            placeholder="Your Email"
+            required
+          />
           <label className="sms">Message</label>
-          <textarea name="message" rows="15" placeholder="Messages" required/>
-          <input type="submit" value="Send" />
+          <textarea name="message" rows="13" placeholder="Messages" required />
+          <input
+            type="submit"
+            value="Send"
+            className="submit"
+            onClick={notify}
+          />
+          <div className="alert">
+            <ToastContainer />
+          </div>
         </form>
 
         <div className="sendto">
