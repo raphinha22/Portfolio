@@ -562,7 +562,8 @@ label {
   .contact-page {
     flex-direction: column;
   }
-  .sms {
+  .sms,
+  .email {
     color: #000;
   }
   .sendto {
@@ -592,6 +593,7 @@ label {
   }
   .contact {
     padding-bottom: 30px;
+    margin-top: 40px;
   }
   .sendto h1 {
     font-size: 25px;
