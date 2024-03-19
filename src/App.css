@@ -22,6 +22,7 @@ body {
   height: 100px;
   position: sticky;
   top: 0;
+  background: var(--color-page);
 }
 .navbar a {
   text-decoration: none;
@@ -36,7 +37,7 @@ body {
 .navbar ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: #434242;
+  color: #fff;
   font-family: var(--main-font);
 }
 .navbar h1 {
