@@ -334,18 +334,23 @@ h1 {
   margin-top: 20px;
   color: var(--textcolor);
 }
+.myproject .img-box {
+  border: var(--color-page) 5px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
 .myproject img {
   width: 300px;
   height: 300px;
   object-fit: cover;
   object-position: top;
-  border-radius: 20px;
-  border: var(--color-page) 5px solid;
   transition: 0.2s;
   cursor: pointer;
+  display: block;
 }
 .myproject img:hover {
   filter: blur(2px);
+  transform: scale(1.1);
 }
 .flex-project {
   display: flex;
@@ -561,7 +566,7 @@ label {
     color: #000;
   }
   .sendto {
-    width: 60%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -587,5 +592,8 @@ label {
   }
   .contact {
     padding-bottom: 30px;
+  }
+  .sendto h1 {
+    font-size: 25px;
   }
 }

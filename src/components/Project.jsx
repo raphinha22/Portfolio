@@ -11,7 +11,9 @@ const Project = () => {
       </div>
       <div className="flex-project">
         <div className="myproject">
-          <img src={football} alt="ronaldo" />
+          <div className="img-box">
+            <img src={football} alt="ronaldo" />
+          </div>
           <h2>Football Project</h2>
           <div className="view-btn">
             <a href="https://github.com/raphinha22/football">
@@ -23,7 +25,9 @@ const Project = () => {
           </div>
         </div>
         <div className="myproject">
-          <img src={rockets} alt="ronaldo" />
+          <div className="img-box">
+            <img src={rockets} alt="ronaldo" />
+          </div>
           <h2>Rockets Project</h2>
           <div className="view-btn">
             <a href="https://github.com/raphinha22/football">
@@ -35,7 +39,9 @@ const Project = () => {
           </div>
         </div>
         <div className="myproject">
-          <img src={menu} alt="ronaldo" />
+          <div className="img-box">
+            <img src={menu} alt="ronaldo" />
+          </div>
           <h2>Menu Project</h2>
           <div className="view-btn">
             <a href="https://github.com/raphinha22/football">

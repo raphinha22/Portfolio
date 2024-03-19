@@ -4,12 +4,8 @@ import about_img from "../Images/phanha.jpg";
 const About = () => {
   return (
     <div className="about">
-      <h3 className="h3-header">
-        get to know more
-      </h3>
-      <h1 className="h1-header">
-        About Me
-      </h1>
+      <h3 className="h3-header">get to know more</h3>
+      <h1 className="h1-header">About Me</h1>
       <div className="about-page">
         <div className="about-img">
           <img src={about_img} alt="Raphinha" />
@@ -26,7 +22,7 @@ const About = () => {
               <Users />
               <h5>Education</h5>
               <p>Bachelors Degree</p>
-              <p>Bacholors Degree</p>
+              <p>Setec Institute</p>
             </div>
           </div>
           <p className="text-about">
