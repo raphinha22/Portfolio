@@ -80,7 +80,7 @@ const Experience = () => {
         </div>
 
         <div className="front-end">
-          <h3>Frontend Development</h3>
+          <h3>Backend Development</h3>
           <div className="expertt-skill">
             <div className="expert-langauge">
               <div className="langauge">
