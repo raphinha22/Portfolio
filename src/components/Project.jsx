@@ -16,7 +16,7 @@ const Project = () => {
           </div>
           <h2>Moto Rental Project</h2>
           <div className="view-btn">
-            <a href="https://github.com/raphinha22/football">
+            <a href="https://github.com/raphinha22/motorental">
               <button className="code">GitHub</button>
             </a>
             <a href="https://motorental.vercel.app">
