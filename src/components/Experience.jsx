@@ -49,7 +49,7 @@ const Experience = () => {
                   <BadgeCheck />
                 </div>
                 <div className="icon-text">
-                  <h2>React</h2>
+                  <h2>React JS</h2>
                   <p>Basic</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ const Experience = () => {
         </div>
 
         <div className="front-end">
-          <h3>Backend Development</h3>
+          <h3>Backend And Version Control</h3>
           <div className="expertt-skill">
             <div className="expert-langauge">
               <div className="langauge">
@@ -99,7 +99,7 @@ const Experience = () => {
                   <BadgeCheck />
                 </div>
                 <div className="icon-text">
-                  <h2>Node JS</h2>
+                  <h2>Git Hub</h2>
                   <p>Basic</p>
                 </div>
               </div>

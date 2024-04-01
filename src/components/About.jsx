@@ -28,8 +28,10 @@ const About = () => {
           <p className="text-about">
             Hello my name is Choup Phanha I am a third year student at Setec
             Institute pursuing a Bachelor’s degree in the field at management
-            information system. Major: HTML, CSS, C++, C#, JAVASCRIPT PHOTOSHOP,
-            JAVA, SQL, ORACLE, PHP ...
+            information system since 2022. And 2016-2022 i was studying at
+            Angrmeas high school. I really want to have some experience and
+            approve my skill. If i can apply a job, I will do my best and work
+            hard.
           </p>
         </div>
       </div>
