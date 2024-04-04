@@ -73,7 +73,7 @@ body {
 .box-image::after {
   content: "";
   position: absolute;
-  inset: 6px;
+  inset: 10px;
   background: #fff;
   border-radius: 50%;
   z-index: 1;
@@ -113,12 +113,39 @@ body {
 .info-raphinha h5 {
   font-size: 20px;
   font-family: var(--main-font);
-  color: #454545;
+  color: #b1b1b1;
 }
-.info-raphinha h1 {
+.Myname {
   font-family: var(--main-font);
-  font-size: 30px;
-  color: var(--textcolor);
+  font-size: 3vw;
+  color: #717171;
+  position: relative;
+  -webkit-text-stroke: 0.2vw #8a8a8a;
+  text-transform: uppercase;
+}
+.Myname::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: var(--color-page);
+  -webkit-text-stroke: 0vw #8a8a8a;
+  border-right: 3px solid var(--color-page);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 .info-raphinha h3 {
   font-family: var(--main-font);

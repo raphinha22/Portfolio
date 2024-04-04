@@ -13,7 +13,9 @@ const Home = () => {
       </div>
       <div className="info-raphinha">
         <h5>Hello, i am</h5>
-        <h1>Choup Phanha</h1>
+        <h1 className="Myname" data-text="Choup_Phanha">
+          Choup_Phanha
+        </h1>
         <h3>Frontend Developer</h3>
         <div className="btn-down__contact">
           <button>
