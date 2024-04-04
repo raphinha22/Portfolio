@@ -537,7 +537,7 @@ label {
 }
 @media screen and (max-width: 1000px) {
   body {
-    background: linear-gradient(to top, #eee 75%, #521bdd 40%);
+    background: linear-gradient(to top, #eee 60%, #521bdd 40%);
   }
   .Experience,
   .about {
@@ -610,9 +610,12 @@ label {
   }
 }
 @media screen and (max-width: 600px) {
-  .box-image img {
-    width: 230px;
-    height: 230px;
+  body {
+    background: linear-gradient(to top, #eee 60%, #521bdd 40%);
+  }
+  .box-image {
+    width: 300px;
+    height: 300px;
   }
   .about-img img {
     width: 300px;
