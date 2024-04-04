@@ -4,11 +4,12 @@ import { Facebook, Github, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-
   return (
     <div className="home">
       <div className="box-image">
-        <img src={Raphinha} alt="raphinha" />
+        <div className="image-inbox">
+          <img src={Raphinha} alt="raphinha" />
+        </div>
       </div>
       <div className="info-raphinha">
         <h5>Hello, i am</h5>
