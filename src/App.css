@@ -723,6 +723,9 @@ label {
   .sendto {
     width: 80%;
   }
+  .myproject:nth-child(1) h2{
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   body {
