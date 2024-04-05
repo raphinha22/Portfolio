@@ -269,30 +269,73 @@ body {
   color: var(--textcolor);
 }
 .experience {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  border: 10px var(--color-page) solid;
+  /* border: 10px var(--color-page) solid; */
   width: 300px;
-  border-radius: 20px;
-  color: var(--textcolor);
+  height: 200px;
+  border-radius: 10px;
+  color: #fff;
   font-size: 20px;
   font-family: var(--main-font);
+  position: relative;
+  cursor: pointer;
+  background: var(--color-page);
+}
+.experience::before {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 300px;
+  background: tomato;
+  border-radius: 10px;
+  transition: 0.3s;
+  z-index: -1;
+  animation: animate1 2s linear infinite;
+}
+.experience:hover::before {
+  height: 212px;
+  width: 312px;
+}
+@keyframes animate1 {
+  50% {
+    filter: hue-rotate(360deg);
+  }
 }
 .education {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  border: 10px var(--color-page) solid;
+  /* border: 10px var(--color-page) solid; */
   width: 300px;
-  border-radius: 20px;
-  color: var(--textcolor);
+  height: 200px;
+  border-radius: 10px;
+  color: #fff;
   font-size: 20px;
   font-family: var(--main-font);
+  position: relative;
+  cursor: pointer;
+  background: var(--color-page);
+}
+.education::before {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 300px;
+  background: tomato;
+  border-radius: 10px;
+  transition: 0.3s;
+  z-index: -1;
+  animation: animate1 2s linear infinite;
+}
+.education:hover::before {
+  height: 212px;
+  width: 312px;
 }
 .text-about {
   line-height: 30px;
@@ -345,21 +388,48 @@ h1 {
   color: var(--textcolor);
 }
 .front-end {
-  padding: 30px;
+  height: 400px;
   width: 700px;
   font-family: var(--main-font);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 20px;
-  border: 10px var(--color-page) solid;
+  /* border: 10px var(--color-page) solid; */
   background: #ffffff;
+  position: relative;
   box-shadow: var(--boxshadow);
+  overflow: hidden;
+}
+.front-end::before {
+  position: absolute;
+  content: "";
+  inset: -300px 200px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  transform: rotate(45deg);
+  animation: ok 4s linear infinite;
+}
+@keyframes ok {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.front-end::after {
+  position: absolute;
+  content: "";
+  inset: 10px;
+  background: #fff;
+  border-radius: 10px;
 }
 .front-end h3 {
   text-align: center;
   font-size: 25px;
   color: var(--textcolor);
+  z-index: 1;
 }
 .expertt-skill {
   display: grid;
@@ -367,6 +437,7 @@ h1 {
   gap: 30px 200px;
   justify-items: start;
   margin-top: 20px;
+  z-index: 1;
 }
 .expert-skill {
   display: flex;
@@ -404,6 +475,7 @@ h1 {
   border: var(--color-page) 5px solid;
   border-radius: 20px;
   overflow: hidden;
+  z-index: 1;
 }
 .myproject img {
   width: 300px;
@@ -426,7 +498,7 @@ h1 {
 }
 .myproject {
   padding: 40px;
-  border: 10px solid var(--color-page);
+  /* border: 10px solid var(--color-page); */
   box-shadow: var(--boxshadow);
   border-radius: 20px;
   font-family: var(--main-font);
@@ -434,17 +506,41 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.myproject::before {
+  position: absolute;
+  content: "";
+  inset: -100px -150px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  transform: rotate(45deg);
+  animation: ok1 3s linear infinite;
+}
+@keyframes ok1 {
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+.myproject::after {
+  position: absolute;
+  content: "";
+  inset: 10px;
+  background: #fff;
+  border-radius: 10px;
 }
 .myproject h2 {
   text-align: center;
   margin-top: 20px;
   color: var(--textcolor);
+  z-index: 1;
 }
 .view-btn {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   gap: 20px;
+  z-index: 1;
 }
 .view-btn .code,
 .demo {
