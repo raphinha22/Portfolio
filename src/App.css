@@ -288,17 +288,13 @@ body {
 .experience::before {
   position: absolute;
   content: "";
-  height: 200px;
-  width: 300px;
+  height: 212px;
+  width: 312px;
   background: tomato;
   border-radius: 10px;
   transition: 0.3s;
   z-index: -1;
   animation: animate1 2s linear infinite;
-}
-.experience:hover::before {
-  height: 212px;
-  width: 312px;
 }
 @keyframes animate1 {
   50% {
@@ -325,17 +321,13 @@ body {
 .education::before {
   position: absolute;
   content: "";
-  height: 200px;
-  width: 300px;
+  height: 212px;
+  width: 312px;
   background: tomato;
   border-radius: 10px;
   transition: 0.3s;
   z-index: -1;
   animation: animate1 2s linear infinite;
-}
-.education:hover::before {
-  height: 212px;
-  width: 312px;
 }
 .text-about {
   line-height: 30px;
@@ -405,7 +397,7 @@ h1 {
 .front-end::before {
   position: absolute;
   content: "";
-  inset: -300px 200px;
+  inset: -300px -200px;
   background: linear-gradient(315deg, #00ccff, #d400d4);
   transform: rotate(45deg);
   animation: ok 4s linear infinite;
