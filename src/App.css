@@ -245,7 +245,7 @@ body {
 }
 .right-about {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: left;
   align-items: center;
 }
@@ -288,9 +288,9 @@ body {
 .experience::before {
   position: absolute;
   content: "";
-  height: 212px;
-  width: 312px;
-  background: tomato;
+  height: 220px;
+  width: 320px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
   border-radius: 10px;
   transition: 0.3s;
   z-index: -1;
@@ -321,10 +321,10 @@ body {
 .education::before {
   position: absolute;
   content: "";
-  height: 212px;
-  width: 312px;
-  background: tomato;
-  border-radius: 10px;
+  height: 220px;
+  width: 320px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  border-radius: 15px;
   transition: 0.3s;
   z-index: -1;
   animation: animate1 2s linear infinite;
@@ -397,7 +397,7 @@ h1 {
 .front-end::before {
   position: absolute;
   content: "";
-  inset: -300px -200px;
+  inset: 40px -200px;
   background: linear-gradient(315deg, #00ccff, #d400d4);
   transform: rotate(45deg);
   animation: ok 4s linear infinite;
