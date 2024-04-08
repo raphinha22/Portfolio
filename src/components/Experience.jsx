@@ -1,7 +1,13 @@
 import { BadgeCheck } from "lucide-react";
+import Aos from "aos";
+import { useEffect } from "react";
+
 const Experience = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="Experience">
+    <div className="Experience" data-aos = "fade-down">
       <div className="expert-head">
         <p>Explore My</p>
         <h1>Experience</h1>

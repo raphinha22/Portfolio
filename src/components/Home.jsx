@@ -2,10 +2,15 @@ import Raphinha from "../Images/phanha.jpg";
 import CV from "../Images/Beige Dark Gray Minimalist Web Developer Resume.jpg";
 import { Facebook, Github, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(()=>{
+    Aos.init();
+  },[])
   return (
-    <div className="home">
+    <div className="home" data-aos = "fade-up">
       <div className="box-image">
         <div className="image-inbox">
           <img src={Raphinha} alt="raphinha" />

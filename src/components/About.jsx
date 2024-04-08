@@ -1,9 +1,14 @@
 import { Medal, Users } from "lucide-react";
 import about_img from "../Images/phanha.jpg";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(()=>{
+    Aos.init();
+  },[])
   return (
-    <div className="about">
+    <div className="about" data-aos = "fade-up">
       <h3 className="h3-header">get to know more</h3>
       <h1 className="h1-header">About Me</h1>
       <div className="about-page">

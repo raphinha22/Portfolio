@@ -1,10 +1,16 @@
 import football from "../Images/ronaldo.jpg";
 import menu from "../Images/menu.jpg";
 import rockets from "../Images/motorental.jpg";
+import Aos from "aos";
+import { useEffect } from "react";
+
 
 const Project = () => {
+  useEffect(()=>{
+    Aos.init();
+  },[])
   return (
-    <div className="Project">
+    <div className="Project" data-aos = "fade-right">
       <div className="Project-head">
         <p>Browse My Recent</p>
         <h1>Projects</h1>

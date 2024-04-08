@@ -2,6 +2,8 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const notify = () => {
   toast.success("messages sent successfully", {
@@ -17,6 +19,9 @@ const notify = () => {
 };
 
 const Contact = () => {
+  useEffect(()=>{
+    Aos.init();
+  },[])
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -40,7 +45,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" data-aos = "fade-down">
       <h4>Contact</h4>
       <h2>Get In Touch</h2>
       <div className="contact-page">
