@@ -285,22 +285,6 @@ body {
   cursor: pointer;
   background: var(--color-page);
 }
-.experience::before {
-  position: absolute;
-  content: "";
-  height: 220px;
-  width: 320px;
-  background: linear-gradient(315deg, #00ccff, #d400d4);
-  border-radius: 10px;
-  transition: 0.3s;
-  z-index: -1;
-  animation: animate1 2s linear infinite;
-}
-@keyframes animate1 {
-  50% {
-    filter: hue-rotate(360deg);
-  }
-}
 .education {
   display: flex;
   flex-direction: column;
@@ -317,17 +301,6 @@ body {
   position: relative;
   cursor: pointer;
   background: var(--color-page);
-}
-.education::before {
-  position: absolute;
-  content: "";
-  height: 220px;
-  width: 320px;
-  background: linear-gradient(315deg, #00ccff, #d400d4);
-  border-radius: 15px;
-  transition: 0.3s;
-  z-index: -1;
-  animation: animate1 2s linear infinite;
 }
 .text-about {
   line-height: 30px;
@@ -715,10 +688,6 @@ label {
   }
   .contact-page {
     flex-direction: column;
-  }
-  .sms,
-  .email {
-    color: #000;
   }
   .sendto {
     width: 80%;
