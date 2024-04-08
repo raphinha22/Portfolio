@@ -1,5 +1,5 @@
 import Raphinha from "../Images/phanha.jpg";
-import CV from "../Images/CV__ENGLISHHH.png";
+import CV from "../Images/Beige Dark Gray Minimalist Web Developer Resume.jpg";
 import { Facebook, Github, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
