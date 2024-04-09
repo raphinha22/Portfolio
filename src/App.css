@@ -284,6 +284,7 @@ body {
   position: relative;
   cursor: pointer;
   background: var(--color-page);
+  box-shadow: var(--boxshadow);
 }
 .education {
   display: flex;
@@ -301,6 +302,7 @@ body {
   position: relative;
   cursor: pointer;
   background: var(--color-page);
+  box-shadow: var(--boxshadow);
 }
 .text-about {
   line-height: 30px;
