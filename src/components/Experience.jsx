@@ -71,17 +71,6 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
-                </div>
-                <div className="icon-text">
-                  <h2>Typescipt</h2>
-                  <p>Basic</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
