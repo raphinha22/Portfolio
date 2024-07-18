@@ -71,42 +71,14 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="front-end">
-          <h3>Backend And Version Control</h3>
-          <div className="expertt-skill">
             <div className="expert-langauge">
               <div className="langauge">
                 <div className="icon">
                   <BadgeCheck />
                 </div>
                 <div className="icon-text">
-                  <h2>Git</h2>
-                  <p>Basic</p>
-                </div>
-              </div>
-            </div>
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
-                </div>
-                <div className="icon-text">
-                  <h2>Git Hub</h2>
-                  <p>Basic</p>
-                </div>
-              </div>
-            </div>
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
-                </div>
-                <div className="icon-text">
-                  <h2>Laravel</h2>
-                  <p>Basic</p>
+                  <h2>Wordpress</h2>
+                  <p>Intermediate</p>
                 </div>
               </div>
             </div>

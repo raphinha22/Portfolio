@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const About = () => {
   useEffect(()=>{
     Aos.init();
-  },[])
+  },[])   
   return (
     <div className="about" data-aos = "fade-up">
       <h3 className="h3-header">get to know more</h3>
