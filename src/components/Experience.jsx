@@ -1,13 +1,13 @@
 import { BadgeCheck } from "lucide-react";
 import Aos from "aos";
 import { useEffect } from "react";
-
+import exp from "./data";
 const Experience = () => {
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <div className="Experience" data-aos = "fade-down">
+    <div className="Experience" data-aos="fade-down">
       <div className="expert-head">
         <p>Explore My</p>
         <h1>Experience</h1>
@@ -16,72 +16,21 @@ const Experience = () => {
         <div className="front-end">
           <h3>Frontend Development</h3>
           <div className="expertt-skill">
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
+            {exp.map((experience) => {
+              return (
+                <div className="expert-langauge" key={experience.id}>
+                  <div className="langauge">
+                    <div className="icon">
+                      <BadgeCheck />
+                    </div>
+                    <div className="icon-text">
+                      <h2>{experience.lang}</h2>
+                      <p>{experience.eib}</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="icon-text">
-                  <h2>HTML</h2>
-                  <p>Experienced</p>
-                </div>
-              </div>
-            </div>
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
-                </div>
-                <div className="icon-text">
-                  <h2>CSS</h2>
-                  <p>Experienced</p>
-                </div>
-              </div>
-            </div>
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
-                </div>
-                <div className="icon-text">
-                  <h2>Javascript</h2>
-                  <p>Basic</p>
-                </div>
-              </div>
-            </div>
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
-                </div>
-                <div className="icon-text">
-                  <h2>React JS</h2>
-                  <p>Basic</p>
-                </div>
-              </div>
-            </div>
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
-                </div>
-                <div className="icon-text">
-                  <h2>Tailwind</h2>
-                  <p>Intermediate</p>
-                </div>
-              </div>
-            </div>
-            <div className="expert-langauge">
-              <div className="langauge">
-                <div className="icon">
-                  <BadgeCheck />
-                </div>
-                <div className="icon-text">
-                  <h2>Wordpress</h2>
-                  <p>Intermediate</p>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>
