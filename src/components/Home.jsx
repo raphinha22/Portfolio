@@ -21,7 +21,7 @@ const Home = () => {
         <h1 className="Myname" data-text="Choup_Phanha">
           Choup_Phanha
         </h1>
-        <h3>Frontend Developer</h3>
+        <h3>GRAPHIC DESAIGNER</h3>
         <div className="btn-down__contact">
           <button>
             <a href={CV}>Download CV</a>

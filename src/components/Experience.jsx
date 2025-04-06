@@ -1,4 +1,4 @@
-import { BadgeCheck } from "lucide-react";
+
 import Aos from "aos";
 import { useEffect } from "react";
 import exp from "./data";
@@ -14,23 +14,18 @@ const Experience = () => {
       </div>
       <div className="expert-skill">
         <div className="front-end">
-          <h3>Frontend Development</h3>
+          <h3>GRAPHIC DESIGNER</h3>
           <div className="expertt-skill">
-            {exp.map((experience) => {
-              return (
-                <div className="expert-langauge" key={experience.id}>
-                  <div className="langauge">
-                    <div className="icon">
-                      <BadgeCheck />
-                    </div>
-                    <div className="icon-text">
-                      <h2>{experience.lang}</h2>
-                      <p>{experience.eib}</p>
-                    </div>
+            {
+              exp.map(({img, id, name}) => {
+                return (
+                  <div className="skill" key={id}>
+                    <img src={img} alt="" />
+                    <h2>{name}</h2>
                   </div>
-                </div>
-              );
-            })}
+                )
+              })
+            }
           </div>
         </div>
       </div>

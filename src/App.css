@@ -606,6 +606,23 @@ label {
   color: #fff;
   font-family: var(--main-font);
 }
+.skill img {
+  width: 100px;
+}
+.skill h2 {
+  font-size: 16px;
+}
+.skill{
+  width: 200px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 8px black;
+}
+
 @media screen and (max-width: 1450px) {
   .expert-skill {
     flex-direction: column;
@@ -696,6 +713,12 @@ label {
   }
   .myproject:nth-child(1) h2{
     font-size: 20px;
+  }
+  .skill img{
+    width: 80px;
+  }
+  .skill h2{
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 600px) {

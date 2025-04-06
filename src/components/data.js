@@ -1,43 +1,28 @@
+import img1 from "../Images/Adobe_After_Effects-Logo.wine.png";
+import img2 from "../Images/Adobe_Illustrator-Logo.wine.png";
+import img3 from "../Images/adobe-photoshop.png";
+import img4 from "../Images/Camera-Silhouette-Background-PNG-Image.png";
+
 const exp = [
     {
         id: 1,
-        lang: "HTML",
-        eib: "Experienced"
+        img: img1,
+        name: "ADOBE PHOTOSHOP",
     },
     {
         id: 2,
-        lang: "CSS",
-        eib: "Experienced"
+        img: img2,
+        name: "ADOBE ILLUSTRATOR",
     },
     {
         id: 3,
-        lang: "Javascript",
-        eib: "Basic"
+        img: img3,
+        name: "ADOBE AFTER EFFECT",
     },
     {
         id: 4,
-        lang: "React JS",
-        eib: "Basic"
+        img: img4,
+        name: "PHOTOGRAPHY",
     },
-    {
-        id: 5,
-        lang: "Tailwind",
-        eib: "Intermediate"
-    },
-    {
-        id: 6,
-        lang: "Wordpress",
-        eib: "Intermediate"
-    },
-    {
-        id: 7,
-        lang: "Git",
-        eib: "Intermediate"
-    },
-    {
-        id: 8,
-        lang: "Github",
-        eib: "Intermediate"
-    }
 ]
 export default exp;
